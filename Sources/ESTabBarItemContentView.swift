@@ -113,6 +113,7 @@ open class ESTabBarItemContentView: UIView {
     
     open var imageView: UIImageView = {
         let imageView = UIImageView.init(frame: CGRect.zero)
+        imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .clear
         return imageView
     }()
